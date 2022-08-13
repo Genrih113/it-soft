@@ -1,0 +1,137 @@
+@import url('./normalize.css');
+@import url('./fonts.css');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  /* padding: 0 20px; */
+}
+.content {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.overlay-gray-grad {
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; */
+  width: 100%;
+  background: linear-gradient(to right, rgba(25, 32, 43, 0.8), rgba(25, 32, 43, 1));
+}
+
+.callback {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.callback__text-zone {
+  width: 65%;
+  padding: 70px 50px;
+}
+.callback__text-zone > *:not(:last-child) {
+  margin: 0 0 30px;
+}
+.callback__il-zone {
+  position: relative;
+  width: 35%;
+  min-height: 425px;
+}
+.callback__il-zone > img {
+  position: absolute;
+}
+.callback__il-zone > img:first-child {
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+.callback__il-zone > img:last-child {
+  top: 50%;
+  right: 50%;
+  height: 100%;
+  transform: translate(40%, -50%);
+}
+.callback__bg {
+  position: relative;
+  background-image: url('../images/content/form-bg-image.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.form {
+  position: relative;
+}
+.form__abs {
+  position:absolute;
+  z-index: 20;
+}
+.form__fieldset {
+  display: flex;
+  /* flex-wrap: wrap; */
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.form__field-zone {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 20px 20px 0;
+}
+.form__field-label {
+  margin: 0 0 10px;
+}
+.form__field-input {
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  outline: none;
+  transition: transform 0.2s linear 0s;
+}
+.form__field-input:hover,
+.form__field-input:focus {
+  transform: scaleY(1.2);
+}
+.form__field-button {
+  height: 50px;
+  background-color: #003896;
+  outline: none;
+  color: #fff;
+  border: none;
+  transition: transform 0.2s linear 0s;
+}
+.form__field-button:hover,
+.form__field-button:focus {
+  transform: scaleY(1.2);
+}
+.form__info-text {
+  margin: 0;
+}
+.form__link {
+  color: inherit;
+  text-decoration: underline;
+  outline: none;
+}
+.form__link:hover,
+.form__link:focus {
+  opacity: 0.7;
+}
