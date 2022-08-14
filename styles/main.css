@@ -352,6 +352,10 @@ body {
   fill: #003896;
   transition: 0.2s;
 }
+.slider__btn > svg {
+  vertical-align: middle;
+  text-align: center;
+}
 .slider__btn:hover,
 .slider__btn:focus {
   background-color: #003896;
