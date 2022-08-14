@@ -422,6 +422,9 @@ body {
 .products__text-zone > * {
   margin-bottom: 40px;
 }
+.products__text-zone > *:last-child {
+  margin-bottom: 0;
+}
 .products__grid-zone {
   display: grid;
   width: 60%;
