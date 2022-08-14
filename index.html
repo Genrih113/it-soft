@@ -12,44 +12,217 @@
   <main class="main">
     <section class="container">
       <div class="callback__bg">
-        <!-- <div class="overlay-gray-grad"></div> -->
-        <div class="overlay-gray-grad callback">
-          <div class="callback__text-zone">
-            <h2 class="h1 h1_light sec-med-f">Не нашли нужную запчасть?</h2>
-            <p class="fs18">
-              Звоните по номеру: 
-              <b class="no-wrap-text fs20">7 (900) 123-34-32</b>
-              <b class="no-wrap-text fs20">8 (8352) 23-34-32</b>
-              или отправьте запрос
-            </p>
-            <form action="#" class="form">
-              <fieldset class="form__fieldset">
-                <div class="form__field-zone">
-                  <label for="" class="form__field-label fs18">Ваше имя</label>
-                  <input type="text" class="form__field-input">
-                </div>
-                <div class="form__field-zone">
-                  <label for="" class="form__field-label fs18">Номер телефона</label>
-                  <input type="text" class="form__field-input">
-                </div>
-                <div class="form__field-zone">
-                  <label for="" class="form__field-label fs18">Модель техники, запчасть</label>
-                  <input type="text" class="form__field-input">
-                </div>
-                <div class="form__field-zone">
-                  <label for="" class="form__field-label">&nbsp;</label>
-                  <button class="form__field-button fs20">Отправить</button>
-                </div>
-              </fieldset>
-              <p class="form__info-text">
-                Нажимая на кнопку, вы даете 
-                <a href="" class="form__link">согласие на обработку своих персональных данных</a>
-              </p>
-            </form>
+        <div class="callback overlay-gray-grad">
+          <div class="callback__il-zone1">
+            <div class="callback__il-zone2">
+              <div class="callback__text-zone">
+                <h2 class="h1 h1_light sec-med-f">Не нашли нужную запчасть?</h2>
+                <p class="fs18">
+                  Звоните по номеру: 
+                  <a href="tel:+7 (900) 123-34-32" class="txt-link pd-lr-10"><b class="nowrap-txt fs20">7 (900) 123-34-32</b></a>
+                  <a href="tel:8 (8352) 23-34-32" class="txt-link pd-lr-10"><b class="nowrap-txt fs20">8 (8352) 23-34-32</b></a>
+                  или отправьте запрос
+                </p>
+
+                <form action="#" method="post" class="form">
+                  <fieldset class="form__fieldset">
+                    <div class="form__field-zone">
+                      <label for="" class="form__field-label">Ваше имя</label>
+                      <input type="text" class="form__field-input" name="name" required>
+                    </div>
+                    <div class="form__field-zone">
+                      <label for="" class="form__field-label">Номер телефона</label>
+                      <input type="tel" class="form__field-input" name="tel" required>
+                    </div>
+                    <div class="form__field-zone">
+                      <label for="" class="form__field-label">Модель техники, запчасть</label>
+                      <input type="text" class="form__field-input" name="spare" required>
+                    </div>
+                    <div class="form__field-zone">
+                      <label for="" class="form__field-label">&nbsp;</label>
+                      <button type="submit" class="form__field-button fs20">Отправить</button>
+                    </div>
+                  </fieldset>
+                  <p class="form__info-text">
+                    Нажимая на кнопку, вы даете 
+                    <a href="" class="form__link">согласие на обработку своих персональных данных</a>
+                  </p>
+                </form>
+
+              </div>
+            </div>
           </div>
-          <div class="callback__il-zone">
-            <img src="./images/content/t25-bg.png" alt="">
-            <img src="./images/content/chetra-t25-izometriya-speredi.png" alt="" class="">
+        </div>
+      </div>
+    </section>
+
+    <section class="container_hp">
+      <div class="advantages">
+        <div class="advantage-card">
+          <img src="./images/icons/delivery-icon.png" alt="" class="advantage-card__icon">
+          <div class="advantage-card__text">
+            <h3 class="advantage-card__title">Доставка товара</h3>
+            <p class="advantage-card__subtitle">
+              Мы доставляем в любой регион России или до транспортной компании
+            </p>
+          </div>
+        </div>
+        <div class="advantage-card">
+          <img src="./images/icons/quality-icon.png" alt="" class="advantage-card__icon">
+          <div class="advantage-card__text">
+            <h3 class="advantage-card__title">Гарантия</h3>
+            <p class="advantage-card__subtitle">
+              Являясь официальным дилером, даем заводскую гарантию на наш товар
+            </p>
+          </div>
+        </div>
+        <div class="advantage-card">
+          <img src="./images/icons/warranty-icon.png" alt="" class="advantage-card__icon">
+          <div class="advantage-card__text">
+            <h3 class="advantage-card__title">Качество</h3>
+            <p class="advantage-card__subtitle">
+              Весь товар  прошел российскую и международную сертификацию
+            </p>
+          </div>
+        </div>
+        <div class="advantage-card">
+          <img src="./images/icons/cost-icon.png" alt="" class="advantage-card__icon">
+          <div class="advantage-card__text">
+            <h3 class="advantage-card__title">Цены</h3>
+            <p class="advantage-card__subtitle">
+              Весь товар  прошел российскую и международную сертификацию
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="products">
+        <div class="products__text-zone">
+          <h2 class="h1 sec-med-f">Продукция ЧАЗ ТМ</h2>
+          <p class="p">
+            ЧАЗ ТМ - это отдельная торговая марка деталей ходовых систем и 
+            быстроизнашиваемых элементов, выпускаемых ООО «ПК «ЧАЗ» 
+            и другими предприятиями Machinery & Industrial Group N.V.. 
+            Производитель деталей — Чебоксарский агрегатный завод.
+          </p>
+          <a href="" class="link-with-img">
+            <span>Перейти в каталог</span>
+            <img src="./images/icons/arrow-to-right-for-link.svg" alt="">
+          </a>
+        </div>
+        <div class="products__grid-zone">
+          <div class="products__card">
+            <img src="./images/content/prod1.jpg" alt="" class="products__card-img">
+            <p class="products__card-text">Для промышленной техники</p>
+            <a href="" class="products__card-link">
+              <img src="./images/icons/arrow-in-square.svg" alt="">
+            </a>
+          </div>
+          <div class="products__card">
+            <img src="./images/content/prod2.jpg" alt="" class="products__card-img">
+            <p class="products__card-text">Для сельскохозяйственной техники</p>
+            <a href="" class="products__card-link">
+              <img src="./images/icons/arrow-in-square.svg" alt="">
+            </a>
+          </div>
+          <div class="products__card">
+            <img src="./images/content/prod3.jpg" alt="" class="products__card-img">
+            <p class="products__card-text">Для лесопромышленной техники</p>
+            <a href="" class="products__card-link">
+              <img src="./images/icons/arrow-in-square.svg" alt="">
+            </a>
+          </div>
+          <div class="products__card">
+            <img src="./images/content/prod4.jpg" alt="" class="products__card-img">
+            <p class="products__card-text">Узлы сцепления</p>
+            <a href="" class="products__card-link">
+              <img src="./images/icons/arrow-in-square.svg" alt="">
+            </a>
+          </div>
+          <div class="products__card">
+            <img src="./images/content/prod5.jpg" alt="" class="products__card-img">
+            <p class="products__card-text">Быстроизнашиваемые элементы</p>
+            <a href="" class="products__card-link">
+              <img src="./images/icons/arrow-in-square.svg" alt="">
+            </a>
+          </div>
+          <div class="products__card">
+            <img src="./images/content/prod6.jpg" alt="" class="products__card-img">
+            <p class="products__card-text">Комплектующие и заготовки на заказ</p>
+            <a href="" class="products__card-link">
+              <img src="./images/icons/arrow-in-square.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container_hp">
+      <div class="manufacturers">
+        <h2 class="h1 sec-med-f">Производители</h2>
+        <div class="slider">
+          <div class="slider__btns">
+            <button class="slider__btn js-slider-to-left">
+              <svg width="31" height="16" viewBox="0 0 31 16" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.292891 8.70711C-0.0976334 8.31658 -0.0976334 7.68342 0.292891 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292891 8.70711ZM31 9H0.999998V7H31V9Z"/>
+              </svg>
+            </button>
+            <button class="slider__btn js-slider-to-right">
+              <svg width="31" height="16" viewBox="0 0 31 16" fill="inherit" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30.7071 8.70711C31.0976 8.31658 31.0976 7.68342 30.7071 7.29289L24.3431 0.928932C23.9526 0.538408 23.3195 0.538408 22.9289 0.928932C22.5384 1.31946 22.5384 1.95262 22.9289 2.34315L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.70711ZM0 9H30V7H0V9Z"/>
+              </svg>
+            </button>
+          </div>
+          <div class="slider__frame">
+            <div class="slider__slides-row">
+              <div class="slider__slide">
+                <a href="" class="slider__slide-link">
+                  <img src="./images/logos/caterpillar.png" alt="" class="slider__slide-img">
+                </a>
+              </div>
+              <div class="slider__slide">
+                <a href="" class="slider__slide-link">
+                  <img src="./images/logos/hitachi.png" alt="" class="slider__slide-img">
+                </a>
+              </div>
+              <div class="slider__slide">
+                <a href="" class="slider__slide-link">
+                  <img src="./images/logos/komatsu.png" alt="" class="slider__slide-img">
+                </a>
+              </div>
+              <div class="slider__slide">
+                <a href="" class="slider__slide-link">
+                  <img src="./images/logos/caterpillar.png" alt="" class="slider__slide-img">
+                </a>
+              </div>
+              <div class="slider__slide">
+                <a href="" class="slider__slide-link">
+                  <img src="./images/logos/hitachi.png" alt="" class="slider__slide-img">
+                </a>
+              </div>
+              <div class="slider__slide">
+                <a href="" class="slider__slide-link">
+                  <img src="./images/logos/komatsu.png" alt="" class="slider__slide-img">
+                </a>
+              </div>
+              <div class="slider__slide">
+                <a href="" class="slider__slide-link">
+                  <img src="./images/logos/caterpillar.png" alt="" class="slider__slide-img">
+                </a>
+              </div>
+              <div class="slider__slide">
+                <a href="" class="slider__slide-link">
+                  <img src="./images/logos/hitachi.png" alt="" class="slider__slide-img">
+                </a>
+              </div>
+              <div class="slider__slide">
+                <a href="" class="slider__slide-link">
+                  <img src="./images/logos/komatsu.png" alt="" class="slider__slide-img">
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
