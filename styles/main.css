@@ -421,8 +421,8 @@ body {
 .products__text-zone {
   width: 35%;
   max-width: 520px;
-  min-width: 460px;
-  padding: 50px 20px;
+  min-width: 420px;
+  padding: 50px 20px 50px 0;
 }
 .products__text-zone > * {
   margin-bottom: 40px;
@@ -495,6 +495,7 @@ body {
     width: 100%;
     max-width: initial;
     min-width: initial;
+    padding-right: 0;
   }
   .products__grid-zone {
     width: 100%;
